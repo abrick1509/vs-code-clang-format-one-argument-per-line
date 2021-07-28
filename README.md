@@ -16,21 +16,23 @@ Calls document.save() after text manipulation, which assumes the "format-on-save
 ## Install
 
 ### Local install
-Either clone this repository to your VS Code extensions path:
+1. Clone this repository.
+2. cd into repository.
+3. Install the extension through the included `.vsix` file:
 ```
-~/.vscode/extensions
+code --install-extension *.vsix
 ```
-
-Or install the provided `.vsix` file with:
+Doing this from a regular terminal or the integrated terminal of a local VS Code instance will only install it for the local VS Code instance under:
 ```
-code --install extension argument-formatter.vsix
+~/.vscode/extensions/
 ```
+Working with a remote instance requires one extra call:
 ### Remote install
-In case you are using the VS Code Remote SSH solution, you need to clone this into the `.vscodeserver` folder on your remote machine:
+1. Repeat steps 1-2 from above on your remote machine, or copy the `*.vsix` to your remote host.
+2. Use the integrated terminal of your remote VS Code instance to execute 3. from above. This will place the extension correctly to the remote instance's extension folder under:
 ```
 ~/.vscode-server/extensions/
 ```
-I'm not aware of a `*.vsix` compliant solution here.
 
 ## Known Issues
 
