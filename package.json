@@ -18,7 +18,8 @@
 		"commands": [
 			{
 				"command": "one-argument-per-line-clang-format.format",
-				"title": "One Argument per Line: Format Selection"
+				"title": "One Argument per Line: Format Selection",
+				"enablement": "editorLangId == cpp"
 			}
 		],
 		"keybindings": [
