@@ -15,9 +15,8 @@ Adapt the extensions behavior by your user/workspace settings:
 | `one-argument-per-line-clang-format.saveDocument` | Call `document.save()` after string manipulation. | `true`        |
 
 ## Requirements
-
-Assumes clang-format to be set as the default formatter for the document (manually or through some other extension).
-Calls document.save() after text manipulation, which assumes the "format-on-save" option to be set.
+If `saveDocument` is `true`, it is assumed that some formatter is set (manually or through some other extension) and the `format-on-save` option is `true`.
+This was tested with the well-known clang-format formatter. 
 ## Known Issues
 Nothing known so far. 
 
