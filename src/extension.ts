@@ -15,11 +15,10 @@ export function activate(context: vscode.ExtensionContext) {
 			const selection = editor.selection;
 			const word = document.getText(selection);
 			editor.edit(editBuilder => {
-				// 1. Use negative lookahead to only find ", " that are not wrapped in in <>/{} or already have a trailing "//".
+				// 1. Use negative lookahead to only find ", " that are not wrapped in in <>/{}() or already have a trailing "//".
 				// this needs to be done globally.
 				// this takes care of template parameters, braced initializers, etc.
-				// TODO: check for cases with do(2,3) as an argument (this is tricky b/c of the closing bracket)
-				let changedword = word.replace(/, (?!([^<\{)]*[>\}]|\s*\/\/))/g, ", //\n");
+				let changedword = word.replace(/, (?!([^<\{()]*[>\})](?!;)|\s*\/\/))/g, ", //\n");
 				// 2. find all ",\n" replace those
 				// this takes care of all arguments directly followed by a newline
 				changedword = changedword.replace(/,\n/g, ", //\n");

@@ -35,11 +35,7 @@ Working with a remote instance requires one extra call:
 ```
 
 ## Known Issues
-
-Won't work with nested function calls as of now, i.e.:
-```
-void foo(2.0, bar(2.0, 1.0));
-```
+Nothing known so far. 
 
 **Please report more bugs! This is a very early version!**
 
