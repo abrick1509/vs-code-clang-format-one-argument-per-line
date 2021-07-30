@@ -1,21 +1,23 @@
 # README
 
-Formats arguments of selected function calls to a single argument per line using clang-format modifiers.
-Simply select the text to change, and select "One Argument per Line: Format Selection" from the command palette.
-Alternatively, use the provided keybinding (defaults to ctrl+f1).
+Formats arguments of selected C++-function calls to a single argument per line. Optionally, the document can automatically be saved after modifying it.
+This allows for automatic formatting through the native VS Code `editor.formatOnSave` option.  
+**Only active for C++ files.**
 
 ## Features
+Simply select the text to change and select `One Argument per Line: Format Selection` from the command palette.
+Alternatively, use the provided keybinding (defaults to `ctrl+f1`).  
 ![feature X](images/format.gif)
 
 ## Options
 Adapt the extensions behavior by your user/workspace settings:
 
-| Name                                              | Description                                       | Default Value |
-| ------------------------------------------------- | ------------------------------------------------- | ------------- |
-| `one-argument-per-line-clang-format.saveDocument` | Call `document.save()` after string manipulation. | `true`        |
+| Name                                              | Description                                        | Default Value |
+| ------------------------------------------------- | -------------------------------------------------- | ------------- |
+| `one-argument-per-line-clang-format.saveDocument` | Calls `document.save()` after string manipulation. | `true`        |
 
 ## Requirements
-If `saveDocument` is `true`, it is assumed that some formatter is set (manually or through some other extension) and the `format-on-save` option is `true`.
+The `saveDocument` option will only have a noticeable effect if the `editor.formatOnSave` option is `true` and some default formatter is set (manually or through some other extension).  
 This was tested with the well-known clang-format formatter. 
 ## Known Issues
 Nothing known so far. 
