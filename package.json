@@ -3,7 +3,7 @@
 	"displayName": "Argument Formatter",
 	"description": "",
 	"publisher": "abrick",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.58.0"
 	},
