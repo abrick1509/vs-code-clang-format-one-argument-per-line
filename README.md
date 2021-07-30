@@ -5,8 +5,14 @@ Simply select the text to change, and select "One Argument per Line: Format Sele
 Alternatively, use the provided keybinding (defaults to ctrl+f1).
 
 ## Features
-
 ![feature X](images/format.gif)
+
+## Options
+Adapt the extensions behavior by your user/workspace settings:
+
+| Name                                              | Description                                       | Default Value |
+| ------------------------------------------------- | ------------------------------------------------- | ------------- |
+| `one-argument-per-line-clang-format.saveDocument` | Call `document.save()` after string manipulation. | `true`        |
 
 ## Requirements
 

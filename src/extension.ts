@@ -25,8 +25,10 @@ export function activate(context: vscode.ExtensionContext) {
 				// 3. replace the word
 				editBuilder.replace(selection, changedword);
 			});
-			// 3. Save document (if format-on-save is enable for vscode, this should call clang-format and thus make it all look nicely)
-			document.save();
+			// 3. Save document if requested (if format-on-save is enable for vscode, this should call clang-format and thus make it all look nicely)
+			if (vscode.workspace.getConfiguration('one-argument-per-line-clang-format').get('saveDocument')) {
+				document.save();
+			}
 		}
 		else {
 			vscode.window.showWarningMessage("Please select code to be formatted. Thank you!");

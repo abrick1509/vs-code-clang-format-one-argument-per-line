@@ -28,7 +28,17 @@
 				"key": "ctrl+f1",
 				"when": "editorTextFocus"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Argument Formatter",
+			"properties": {
+				"one-argument-per-line-clang-format.saveDocument": {
+					"type": "boolean",
+					"default": true,
+					"description": "Save document after string manipulation."
+				}
+			}
+		}
 	},
 	"repository": "https://github.com/abrick1509/vs-code-clang-format-one-argument-per-line.git",
 	"scripts": {
