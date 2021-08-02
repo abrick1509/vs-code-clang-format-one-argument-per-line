@@ -16,12 +16,18 @@ Adapt the extensions behavior by your user/workspace settings:
 | ------------------------------------------------- | -------------------------------------------------- | ------------- |
 | `one-argument-per-line-clang-format.saveDocument` | Calls `document.save()` after string manipulation. | `true`        |
 
+## Keybindings
+
+| Name                                        | Description       | Default Value |
+| ------------------------------------------- | ----------------- | ------------- |
+| `one-argument-per-line-clang-format.format` | Format selection. | `ctrl+f1`     |
+
 ## Requirements
 The `saveDocument` option will only have a noticeable effect if the `editor.formatOnSave` option is `true` and some default formatter is set (manually or through some other extension).  
 This was tested with the well-known clang-format formatter. 
 ## Known Issues
 Nothing known so far. 
 
-**Please report more bugs! This is a very early version!**
+**Please report bugs! This is a very early version!**
 
 **Enjoy!**
