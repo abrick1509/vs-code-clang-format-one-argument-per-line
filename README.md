@@ -28,6 +28,6 @@ This was tested with the well-known clang-format formatter.
 ## Known Issues
 Nothing known so far. 
 
-**Please report bugs! This is a very early version!**
+**Please report bugs [here](https://github.com/abrick1509/vs-code-clang-format-one-argument-per-line/issues).**
 
 **Enjoy!**
